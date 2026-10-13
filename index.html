@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AppFolder — 桌面文件夹小组件</title>
+<meta name="description" content="AppFolder：桌面上的 App 文件夹小组件">
+<style>
+:root{--bg:#fff;--fg:#111;--mut:#666;--line:#e5e5e5;--accent:#3478f6}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--fg:#eee;--mut:#9a9a9a;--line:#2a2a2a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+ font:16px/1.65 -apple-system,BlinkMacSystemFont,"PingFang SC",system-ui,sans-serif}
+main{max-width:44rem;margin:0 auto;padding:3rem 1.25rem 5rem}
+h1{font-size:1.7rem;margin:0 0 .35rem}
+h2{font-size:1.15rem;margin:2.2rem 0 .5rem}
+h3{font-size:1rem;margin:1.6rem 0 .3rem}
+p,li{color:var(--fg)}
+.mut{color:var(--mut)}
+.note{color:var(--mut);font-size:.9rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid var(--line);margin:2.5rem 0}
+nav{margin:1.5rem 0 2.5rem;display:flex;gap:1.25rem;flex-wrap:wrap}
+code{background:rgba(127,127,127,.14);padding:.1rem .35rem;border-radius:4px;font-size:.92em}
+footer{margin-top:3rem;color:var(--mut);font-size:.85rem}
+</style>
+<main>
+<h1>AppFolder</h1>
+<p class="mut">把常用的几个 App 收进桌面上的一个方块，点一下直接打开——不经过 AppFolder，中间不闪任何东西。</p>
+<nav><a href="/support.html">支持与常见问题</a> <a href="/privacy.html">隐私政策</a></nav>
+
+<h2>它是怎么做到「点一下直开」的</h2>
+<p>iOS 27 新开放了「系统动作」——小组件里的按钮可以直接交给系统去打开目标 App，不需要 URL scheme，也不会先唤起 AppFolder。代价是目标 App 得由你在系统的「编辑小组件」面板里手选，因为系统不提供任何可编程的目标列表。</p>
+<p>本 App 的形态也因此很轻：一屏教程，加上一个「修正图标」工具。</p>
+
+<h2>隐私</h2>
+<p>不收集任何数据。没有账号、没有统计、没有广告 SDK。详见<a href="/privacy.html">隐私政策</a>。</p>
+
+<h2>联系</h2>
+<p>邮件 <a href="mailto:lvyufeng@cqu.edu.cn">lvyufeng@cqu.edu.cn</a>，或在 <a href="https://github.com/lvyufeng/appfolder-site/issues">GitHub Issues</a> 反馈。</p>
+
+<footer>AppFolder · <a href="/support.html">支持</a> · <a href="/privacy.html">隐私政策</a></footer>
+</main>
+</html>
